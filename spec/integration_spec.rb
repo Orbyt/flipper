@@ -2,6 +2,7 @@ require 'helper'
 require 'flipper/feature'
 require 'flipper/adapters/memory'
 
+# test commit to trigger build
 RSpec.describe Flipper do
   let(:adapter)     { Flipper::Adapters::Memory.new }
   let(:flipper)     { described_class.new(adapter) }
